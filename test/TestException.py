@@ -9,7 +9,7 @@ def main():
     try:
         b = int(a)
     except Exception as ex:
-        raise exceptions.APIException(message=ex.message)
+        raise exceptions.APIException(status="404", error_code="wrong")
 
 if __name__ == "__main__":
     main()
